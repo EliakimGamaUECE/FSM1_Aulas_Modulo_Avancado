@@ -1,21 +1,3 @@
-// import { createContext, useState } from "react";
-
-// export const GastosContext = createContext();
-
-// export const GastosProvider = ({ children }) => {
-//   const [gastos, setGastos] = useState([]);
-
-//   const adicionarGasto = (novoGasto) => {
-//     setGastos((prevGastos) => [...prevGastos, novoGasto]); // Usando callback no setState para melhor atualização
-//   };
-
-//   return (
-//     <GastosContext.Provider value={{ gastos, adicionarGasto }}>
-//       {children}
-//     </GastosContext.Provider>
-//   );
-// };
-
 import { createContext, useState, useEffect } from "react";
 import api from "../api"; // Importa a API configurada
 
